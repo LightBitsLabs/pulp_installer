@@ -35,3 +35,8 @@
     path: '{{ __pulp_old_artifact_dir }}'
     state: absent
   become: true
+
+- name: Delete symlink from old artifact directory location
+  file:
+    path: '{{ __pulp_old_artifact_dir }}'
+    state: absent
