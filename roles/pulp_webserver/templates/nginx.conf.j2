@@ -102,6 +102,8 @@ http {
             # redirects, we set the Host: header above already.
             proxy_redirect off;
             proxy_pass http://pulp-content;
+
+            rewrite ^([^.]*[^/])$ $1/ permanent;
         }
 
         location {{ pulp_settings.api_root  | default("/pulp/") }}api/v3/ {
