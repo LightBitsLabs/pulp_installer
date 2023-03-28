@@ -5,11 +5,11 @@ The Pulp 3 Ansible installer is a collection of Ansible roles that you can use t
 
 Each Ansible role installs and configures a component of Pulp, or other services required by Pulp (PostgreSQL, Redis and a webserver.)
 
-This version of the installer, 3.21.4, installs the latest release of pulpcore 3.21.z.
+This version of the installer, 3.22.1, installs the latest release of pulpcore 3.22.z.
 
-If run against an older version of Pulp 3, it will upgrade it to 3.21.z.
+If run against an older version of Pulp 3, it will upgrade it to 3.22.z.
 
-If run again, the installed version of pulpcore 3.21 is not updated unless `pulpcore_update` is set to `true`.
+If run again, the installed version of pulpcore 3.22 is not updated unless `pulpcore_update` is set to `true`.
 
 ---
 **Didn't find what you need to get started?**
@@ -79,6 +79,13 @@ to a cluster (with multiple tiers), the hardware requirements will differ, and o
 system from the list above, but each node can run a different OS.
 
 If you are using an existing PostgreSQL host/cluster, version 10 or higher is required.
+
+If you are using an existing PostgreSQL host/cluster, and it is at version 10 through 12, you
+must do one of the following:
+1. Create a new database (default name: `pulp`) and load the postgresql extension `hstore` for it.
+2. Create a new database (default name: `pulp`) and give the Pulp user account (default name:
+   `pulp`) `superuser` permission. The account must also be the `owner` of the database. After
+   installation (or upgrade to pulpcore 3.22), the superuser permission can be taken away.
 
 If you are using an existing Redis host/cluster, version 3 or higher is required.
 
