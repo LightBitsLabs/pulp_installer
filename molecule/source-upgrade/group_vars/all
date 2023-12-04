@@ -8,11 +8,11 @@ pulp_upgrade: true
 # trigger the handler.
 pulp_pip_editable: false
 pulp_install_plugins:
-  pulp-file:
-    git_url: "https://github.com/pulp/pulp_file"
-    git_revision: "main"
-    upgrade: true
-    source_dir: "/var/lib/pulp/devel/pulp_file"
+#  pulp-file:
+#    git_url: "https://github.com/pulp/pulp_file"
+#    git_revision: "main"
+#    upgrade: true
+#    source_dir: "/var/lib/pulp/devel/pulp_file"
   pulp-rpm:
     git_url: "https://github.com/pulp/pulp_rpm"
     git_revision: "main"

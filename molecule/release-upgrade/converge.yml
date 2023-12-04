@@ -30,7 +30,7 @@
       assert:
         that:
           - pip_pkgs.packages['/usr/local/lib/pulp/bin/pip']['pulpcore'][0].version is version("3.14.17", "=")
-          - pip_pkgs.packages['/usr/local/lib/pulp/bin/pip']['pulp-file'][0].version is version("1.8.2", "=")
+          #- pip_pkgs.packages['/usr/local/lib/pulp/bin/pip']['pulp-file'][0].version is version("1.8.2", "=")
     - name: Assert pulp-rpm==3.14.15
       assert:
         that:
@@ -68,7 +68,7 @@
       assert:
         that:
           - pip_pkgs.packages['/usr/local/lib/pulp/bin/pip']['pulpcore'][0].version is version("3.14.17", "=")
-          - pip_pkgs.packages['/usr/local/lib/pulp/bin/pip']['pulp-file'][0].version is version("1.8.2", "=")
+          #- pip_pkgs.packages['/usr/local/lib/pulp/bin/pip']['pulp-file'][0].version is version("1.8.2", "=")
     - name: Assert pulp-rpm==3.14.15
       assert:
         that:

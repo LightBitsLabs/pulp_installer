@@ -21,8 +21,8 @@ pulp_install_plugins:
   #   source_dir: "/home/vagrant/devel/pulp_cookbook"
   # pulp-deb:
   #   source_dir: "/home/vagrant/devel/pulp_deb"
-  pulp-file:
-    source_dir: "/home/vagrant/devel/pulp_file"
+  # pulp-file:
+  #  source_dir: "/home/vagrant/devel/pulp_file"
   # pulp-gem:
   #   source_dir: "/home/vagrant/devel/pulp_gem"
   # pulp-maven:

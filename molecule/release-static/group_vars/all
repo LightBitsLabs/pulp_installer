@@ -12,11 +12,11 @@ pulp_install_plugins:
     extras: VitaminC
   # pulp-cookbook:
   # pulp-deb:
-  pulp-file:
-    extras:
-     - VitaminC
-     - VitaminD
-    version: "1.11.3"
+  # pulp-file:
+    # extras:
+     # - VitaminC
+     # - VitaminD
+    # version: "1.11.3"
   # pulp-gem:
   # pulp-maven:
   # pulp-npm:
